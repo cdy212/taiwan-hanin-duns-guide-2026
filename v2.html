@@ -9,8 +9,8 @@
 :root{--ink:#142f48;--sub:#526577;--line:#cfdce7;--blue:#164a75;--bg:#eff4f8;--yellow:#f9bd4b}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",Arial,sans-serif;font-size:14px;line-height:1.48}
 .wrap{width:calc(100% - 24px);margin:10px auto 24px}
-header{display:flex;justify-content:space-between;align-items:center;gap:18px;background:#123959;color:#fff;padding:15px 19px;border-radius:10px}
-h1{font-size:clamp(21px,2.4vw,29px);margin:0;line-height:1.3;letter-spacing:-.6px}header p{margin:4px 0 0;color:#d9e9f8;font-size:12px}.header-right{text-align:right;white-space:nowrap;color:#eaf3fa;font-size:12px}
+header{display:flex;align-items:center;background:#123959;color:#fff;padding:14px 19px;border-radius:10px}
+h1{font-size:clamp(21px,2.4vw,29px);margin:0;line-height:1.3;letter-spacing:-.6px}
 .flow{display:flex;align-items:center;justify-content:space-between;gap:7px;margin:9px 0;padding:8px 11px;background:#e4ecf3;border-radius:8px;font-weight:750;font-size:13px}
 .flow span{flex:1;text-align:center}.flow b{font-size:17px;color:#55738f}
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
@@ -29,13 +29,13 @@ h2{font-size:16px;margin:0;line-height:1.3}.desc{font-size:12px;color:var(--sub)
 .data th{background:#edf4f9;color:#1d486e;width:17%}.data td:nth-child(2){width:59%}.data td:nth-child(3){width:24%}
 .bottom{display:flex;justify-content:space-between;gap:14px;margin-top:8px;padding:8px 10px;border-radius:6px;background:#f9f0de;color:#593f19;font-size:12px;line-height:1.4}
 footer{font-size:11px;color:#607385;margin:9px 3px 0}a{color:#005a9f}
-@media(max-width:720px){.wrap{width:calc(100% - 12px);margin:5px auto 18px}header{padding:11px;border-radius:7px;display:block}.header-right{text-align:left;white-space:normal;margin-top:5px}.flow{font-size:11px;gap:2px;padding:7px 3px}.grid{grid-template-columns:1fr;gap:7px}.step{padding:10px}.shot img{height:auto;max-height:235px}.bottom{display:block}.bottom>div+div{margin-top:6px}.data{font-size:11px}.data th,.data td{padding:6px 4px}.data th{width:21%}h2{font-size:15px}}
+@media(max-width:720px){.wrap{width:calc(100% - 12px);margin:5px auto 18px}header{padding:11px;border-radius:7px;display:block}.flow{font-size:11px;gap:2px;padding:7px 3px}.grid{grid-template-columns:1fr;gap:7px}.step{padding:10px}.shot img{height:auto;max-height:235px}.bottom{display:block}.bottom>div+div{margin-top:6px}.data{font-size:11px}.data th,.data td{padding:6px 4px}.data th{width:21%}h2{font-size:15px}}
 @page{size:A4 landscape;margin:5mm}
 @media print{
 *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 html,body{background:white;margin:0;padding:0;font-size:10px;line-height:1.23}
 .wrap{width:100%;margin:0;padding:0}
-header{padding:8px 12px;border-radius:0}h1{font-size:19px}header p,.header-right{font-size:9px}
+header{padding:8px 12px;border-radius:0}h1{font-size:19px}
 .flow{padding:4px 8px;margin:5px 0;font-size:10px}.flow b{font-size:12px}
 .grid{gap:5px}.step{padding:6px 8px;border-radius:3px;break-inside:avoid}
 .top{margin-bottom:3px;gap:6px}.no{width:22px;height:22px;flex-basis:22px;font-size:13px}h2{font-size:11.5px}.desc{font-size:9px;margin:0}
@@ -50,8 +50,7 @@ footer{font-size:8px;margin:3px 0 0}
 </head>
 <body><main class="wrap">
 <header>
- <div><h1>대만 한인회 D‑U‑N‑S 번호 발급 · V2</h1><p>기존 번호가 <strong>없다는 가정</strong> | Apple·Google 조직 개발자 계정 등록용 | D‑U‑N‑S 발급 무료</p></div>
- <div class="header-right">공식 사이트 실사 4장 · 2026.11.09<br><strong>조회·신청 전 안내 / 발급 완료 아님</strong></div>
+ <h1>대만 한인회 D‑U‑N‑S 번호 발급 · V2</h1>
 </header>
 <div class="flow"><span>① 공식 안내</span><b>›</b><span>② Apple 로그인·조회</span><b>›</b><span>③ 미등록 시 무료 신청</span><b>›</b><span>④ 번호 발급·활용</span></div>
 <div class="grid">
